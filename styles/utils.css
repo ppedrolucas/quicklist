@@ -1,6 +1,6 @@
 .container {
-  max-width: 39.1875rem;
-  min-width: 20.375rem;
+  max-width: 40rem;
+  min-width: 16rem;
   margin-inline: 2rem;
   display: grid;
 }
@@ -45,7 +45,7 @@
   background-color: var(--green-light);
 }
 
-@media (width >= 80em) {
+@media (width >= 48em) {
   .container {
     margin-inline: auto;
   }

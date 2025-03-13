@@ -45,7 +45,7 @@ form {
   }
 }
 
-@media (width >= 80em) {
+@media (width >= 48em) {
   form {
     grid-template-columns: 1fr 10rem;
   }

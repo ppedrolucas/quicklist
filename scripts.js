@@ -1,23 +1,31 @@
 const form = document.querySelector("#form");
 const ul = document.querySelector("ul");
 
+/**
+ * Criar cartão de alerta para comprovação de inserção de um novo elemento
+ * @param {String} classe
+ */
 function addCard(classe) {
   const alerta = document.querySelector("#alert");
   const content = document.querySelector("#alert-content p");
+  const close = document.querySelector("#close");
 
   content.textContent = "Item adicionado à lista";
   alerta.classList.add(classe);
-
-  const close = document.querySelector("#close");
 
   close.addEventListener("click", () => {
     alerta.classList.remove(classe);
   });
 }
 
+/**
+ * Criar cartão de alerta para comprovação da remoção de tal elemento
+ * @param {String} classe
+ */
 function removeCard(classe) {
   const alerta = document.querySelector("#alert");
   const content = document.querySelector("#alert-content p");
+  const close = document.querySelector("#close");
 
   if (classe == "alert-danger") {
     alerta.classList.remove("alert-success");
@@ -26,13 +34,15 @@ function removeCard(classe) {
   content.textContent = "Item removido da lista";
   alerta.classList.add(classe);
 
-  const close = document.querySelector("#close");
-
   close.addEventListener("click", () => {
     alerta.classList.remove(classe);
   });
 }
-// Função para criar novo elemento da lista, formatado e mediante o valor do input
+// Função para
+/**
+ * Criar um novo componente à lista de compras, com formatação padrão e conteúdo mediante o informado no input
+ * @param {String} newLabel
+ */
 function addItemList(newLabel) {
   const item = document.createElement("li");
   item.classList.add("item");
@@ -66,6 +76,9 @@ function addItemList(newLabel) {
   addCard("alert-success");
 }
 
+/**
+ * Observar o evento de envio do formulário e executar todas as funcionalidades do algoritmo, validando antes se o input está vazio ou não
+ */
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
