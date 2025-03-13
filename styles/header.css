@@ -1,0 +1,12 @@
+header nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2.75rem;
+
+  h1 {
+    font-size: var(--title);
+    font-weight: bold;
+    line-height: 2rem;
+  }
+}

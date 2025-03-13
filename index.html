@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>Lista de compras</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img id="logo" src="image/logo.svg" alt="" />
+        <nav>
+          <a href="#">Voltar</a>
+          <h1>Compras da semana</h1>
+        </nav>
+      </header>
+      <form id="form" class="add-item">
+        <input type="text" placeholder="Adicione um novo item" id="input" />
+        <button type="submit" id="btn">Adicionar item</button>
+      </form>
+      <div class="list">
+        <ul>
+          <!-- <li class="item">
+            <div class="content">
+              <div class="checkbox-img"></div>
+              <label id="label" for="check">Pão de forma</label>
+              <input type="checkbox" />
+            </div>
+            <img src="image/trash.svg" alt="" />
+          </li> -->
+        </ul>
+      </div>
+      <div id="alert" class="alert">
+        <div id="alert-content">
+          <img src="image/alert.svg" alt="" />
+          <p></p>
+        </div>
+        <img id="close" src="image/delete-small.svg" alt="" />
+      </div>
+
+      <!-- 
+      Fica faltando estilizar o input de checkbox e começar o javascript
+
+      Ideias para adicionar ao projeto:
+
+      Adicionar uma animação keyframe para quando o card de alert aparecer, ele deve aparecer suavemente de cima para baixo, o botão X deve funcionar para remove-lo de tela
+      -->
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

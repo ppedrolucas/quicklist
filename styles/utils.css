@@ -1,0 +1,52 @@
+.container {
+  max-width: 39.1875rem;
+  min-width: 20.375rem;
+  margin-inline: 2rem;
+  display: grid;
+}
+
+#logo {
+  margin-top: 1.56rem;
+  display: flex;
+  justify-self: center;
+  margin-bottom: 3.875rem;
+}
+
+.alert {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2.75rem;
+  border-radius: 12px;
+  padding-inline: 0.75rem;
+  color: var(--always-white);
+  margin-bottom: 2.25rem;
+  display: none;
+
+  div {
+    display: flex;
+    gap: 0.5rem;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+}
+
+.alert-danger {
+  display: flex;
+  background-color: var(--color-danger);
+}
+
+.alert-success {
+  display: flex;
+  background-color: var(--green-light);
+}
+
+@media (width >= 80em) {
+  .container {
+    margin-inline: auto;
+  }
+}
